@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { notFound } from 'next/navigation';
 import { getCategoryBySlug } from '../../../lib/db';
 import ProductCard from '../../../components/ProductCard';

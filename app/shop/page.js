@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import ProductCard from '../../components/ProductCard';
 import { getProducts, getCategories } from '../../lib/db';
 import Link from 'next/link';

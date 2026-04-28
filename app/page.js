@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import Link from 'next/link';
 import HeroBanner from '../components/HeroBanner';
 import TrustBadges from '../components/TrustBadges';
