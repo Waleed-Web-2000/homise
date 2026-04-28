@@ -108,13 +108,13 @@ export default async function ProductPage({ params }) {
           {/* Images */}
           <div>
             <div className="relative aspect-square bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 mb-4">
-              <img src={mainImg} alt={product.name} className="w-full h-full object-cover" onError={e => { e.target.src = '/placeholder-product.png'; }} />
+              <img src={mainImg} alt={product.name} className="w-full h-full object-cover" />
             </div>
             {product.images?.length > 1 && (
               <div className="grid grid-cols-4 gap-2">
                 {product.images.slice(0, 4).map((img, i) => (
                   <div key={i} className="aspect-square bg-gray-50 rounded-lg overflow-hidden border border-gray-200">
-                    <img src={img} alt={`${product.name} ${i + 1}`} className="w-full h-full object-cover" loading="lazy" onError={e => { e.target.src = '/placeholder-product.png'; }} />
+                    <img src={img} alt={`${product.name} ${i + 1}`} className="w-full h-full object-cover" loading="lazy" />
                   </div>
                 ))}
               </div>

@@ -98,7 +98,7 @@ export default function OrderDetailPage({ params }) {
             {order.items?.map((item, i) => (
               <div key={i} className="flex gap-4 p-5">
                 <div className="w-16 h-16 bg-gray-50 rounded-lg overflow-hidden flex-shrink-0">
-                  <img src={getImageSrc(item.image)} alt={item.name} className="w-full h-full object-cover" onError={e => { e.target.src = '/placeholder-product.png'; }} />
+                  <img src={getImageSrc(item.image)} alt={item.name} className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
                   <p className="font-medium text-gray-800">{item.name}</p>

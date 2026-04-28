@@ -59,7 +59,7 @@ export default function AdminProducts() {
                   <tr key={p._id} className="border-t hover:bg-gray-50">
                     <td className="px-4 py-3">
                       <div className="w-12 h-12 bg-gray-50 rounded-lg overflow-hidden">
-                        <img src={getImageSrc(p.images?.[0])} alt={p.name} className="w-full h-full object-cover" onError={e => { e.target.src = '/placeholder-product.png'; }} />
+                        <img src={getImageSrc(p.images?.[0])} alt={p.name} className="w-full h-full object-cover" />
                       </div>
                     </td>
                     <td className="px-4 py-3 max-w-xs">
