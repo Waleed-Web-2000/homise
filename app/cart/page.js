@@ -96,15 +96,12 @@ export default function CartPage() {
                 </div>
               </div>
               <p className="text-xs text-gray-500 mt-3 mb-4">Shipping: Rs. 199 flat rate. Delivery in 3–5 business days.</p>
-              {cart.length === 1 ? (
-                <Link href={`/product/${cart[0].slug}`} className="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors min-h-[48px] flex items-center justify-center">
-                  Proceed to Order
-                </Link>
-              ) : (
-                <Link href="/shop" className="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors min-h-[48px] flex items-center justify-center">
-                  Continue Shopping
-                </Link>
-              )}
+              <Link href="/checkout" className="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors min-h-[48px] flex items-center justify-center">
+                Proceed to Checkout
+              </Link>
+              <Link href="/shop" className="block w-full text-center text-gray-600 text-sm mt-3 hover:underline">
+                Continue Shopping
+              </Link>
             </div>
           </div>
         </div>

@@ -2,7 +2,6 @@ export const dynamic = 'force-dynamic';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getProductBySlug, getProducts } from '../../../lib/db';
-import OrderForm from '../../../components/OrderForm';
 import ProductCard from '../../../components/ProductCard';
 import Breadcrumb from '../../../components/Breadcrumb';
 import ReviewSection from './ReviewSection';
@@ -172,8 +171,6 @@ export default async function ProductPage({ params }) {
             </div>
 
             <ProductActions product={product} />
-
-            <OrderForm product={product} />
           </div>
         </div>
 
