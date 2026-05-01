@@ -46,7 +46,7 @@ export const metadata = {
   metadataBase: new URL('https://homisepk.com'),
   title: { default: 'Homisepk – Online Shopping in Pakistan', template: '%s | Homisepk' },
   description: 'Shop online in Pakistan at Homisepk. Cash on Delivery. Fast 3-5 day delivery. 7-day returns.',
-  icons: { icon: '/favicon.ico' }
+  icons: { icon: '/icon.svg' }
 };
 
 export default function RootLayout({ children }) {
