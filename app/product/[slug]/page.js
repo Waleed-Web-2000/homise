@@ -6,6 +6,7 @@ import OrderForm from '../../../components/OrderForm';
 import ProductCard from '../../../components/ProductCard';
 import Breadcrumb from '../../../components/Breadcrumb';
 import ReviewSection from './ReviewSection';
+import ProductActions from '../../../components/ProductActions';
 
 export async function generateMetadata({ params }) {
   try {
@@ -169,6 +170,8 @@ export default async function ProductPage({ params }) {
                 </div>
               ))}
             </div>
+
+            <ProductActions product={product} />
 
             <OrderForm product={product} />
           </div>

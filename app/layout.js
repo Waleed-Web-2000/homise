@@ -1,5 +1,6 @@
 import './globals.css';
 import ConditionalLayout from '../components/ConditionalLayout';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 const orgSchema = {
   '@context': 'https://schema.org',
@@ -59,6 +60,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-screen flex flex-col bg-white">
+        <GoogleAnalytics />
         <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
