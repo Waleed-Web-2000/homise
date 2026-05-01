@@ -6,6 +6,7 @@ import ProductCard from '../../../components/ProductCard';
 import Breadcrumb from '../../../components/Breadcrumb';
 import ReviewSection from './ReviewSection';
 import ProductActions from '../../../components/ProductActions';
+import StickyBuyBar from '../../../components/StickyBuyBar';
 
 export async function generateMetadata({ params }) {
   try {
@@ -100,7 +101,7 @@ export default async function ProductPage({ params }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24 lg:pb-8">
         <div className="mb-6">
           <Breadcrumb items={[{ name: 'Home', href: '/' }, { name: 'Shop', href: '/shop' }, { name: product.name }]} />
         </div>
@@ -171,8 +172,11 @@ export default async function ProductPage({ params }) {
             </div>
 
             <ProductActions product={product} />
+            <div id="product-actions-sentinel" />
           </div>
         </div>
+
+        <StickyBuyBar product={product} />
 
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Product Description</h2>
